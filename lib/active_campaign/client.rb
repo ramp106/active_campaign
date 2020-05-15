@@ -12,12 +12,16 @@ module ActiveCampaign
 
     endpoint :accounts
     endpoint :contacts
+    endpoint :contact_lists
+    endpoint :contact_tags
+    endpoint :connections
     endpoint :account_contacts
     endpoint :addresses
     endpoint :groups
     endpoint :lists
     endpoint :users
-
+    endpoint :tags
+    
     attr_reader :config
 
     def initialize(conf = {})
